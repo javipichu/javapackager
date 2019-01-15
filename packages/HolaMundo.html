@@ -1,0 +1,43 @@
+<html><head>
+  <SCRIPT src="http://java.com/js/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'HolaMundo.jnlp'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedholamundo() {
+        dtjava.embed(
+            {
+                id : 'holamundo',
+                url : 'HolaMundo.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '0',
+                height : '0'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedholamundo);
+</script>
+
+</head><body>
+<h2>Test page for <b>HolaMundo</b></h2>
+  <b>Webstart:</b> <a href='HolaMundo.jnlp' onclick="return launchApplication('HolaMundo.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="HolaMundo.jnlp">
+  <information>
+    <title>Hola demo</title>
+    <vendor>Unknown</vendor>
+    <description>HolaMundo</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="HolaMundo.jar" size="1192" download="null" />
+  </resources>
+  <jfx:javafx-desc  width="0" height="0" main-class="holamundo.HolaMundo"  name="HolaMundo" />
+  <update check="background"/>
+</jnlp>
